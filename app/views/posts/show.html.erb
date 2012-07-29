@@ -1,0 +1,13 @@
+<h1><%= @post.title %></h1>
+<small><%= @timestamp %></small>
+<p>
+  <%= @post.content %>
+</p>
+
+<small>
+ ~<%= @post.author %>
+</small>
+
+<hr />
+
+<%= link_to "Dodaj wpis", new_post_path %>
